@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+  // 로그인 구현하기
+  let login = prompt('아이디를 입력하세요', '');
+
+  if (login == 'Admin') {
+    let pass = prompt('비밀번호는 무엇인가요?', '');
+
+    if (pass == 'TheMaster') {
+      alert('환영합니다!');
+    } else if (pass == '' || pass == null) {
+      alert('취소되었습니다!');
+    } else {
+      alert('인증에 실패했습니다');
+    }
+  } else if (login == '' || login == null) {
+    alert('취소되었습니다,');
+  } else {
+    alert('인증되지 않은 사용자입니다.');
+  }
+</script>
